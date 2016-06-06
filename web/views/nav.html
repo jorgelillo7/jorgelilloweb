@@ -13,19 +13,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
 					<ul class="nav navbar-nav navbar-right">
-						{% if activeTab == 0 %}
-	   					<li class="dropdown active">
-						{% else %}
-						   <li class="dropdown">
-						{% endif %}
-							<a href="/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-								<i class="fa fa-home"></i><br>Home <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu dropdown-menu-left" role="menu">
-								<li class="active"><a href="/">Home</a></li>
-								<li><a href="alt">Home 2</a></li>
-							</ul>
-						</li>
+						
 						{% if activeTab == 1 %}
 	   					<li class="active">
 						{% else %}
@@ -38,7 +26,7 @@
 						{% else %}
 						   <li>
 						{% endif %}
-							<a href="services"><i class="fa fa-tasks"></i><br>Services</a>
+							<a href="experience"><i class="fa fa-tasks"></i><br>Experience</a>
 						</li>
 						{% if activeTab == 3 %}
 	   					<li class="active">
@@ -54,18 +42,7 @@
 						{% endif %}
 							<a href="contact"><i class="fa fa-envelope"></i><br>Contact</a>
 						</li>
-						{% if activeTab == 5 %}
-	   					<li class="dropdown active">
-						{% else %}
-						   <li class="dropdown">
-						{% endif %}
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-								<i class="fa fa-paperclip"></i><br>Pages <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="pricing">Pricing tables</a></li>
-							</ul>
-						</li>
+						
 					</ul>
 				</div>
 			</div>

@@ -32,9 +32,9 @@ $app->get('/portfolio', function() use($app) {
   return $app['twig']->render('portfolio.twig', array('activeTab'=> 1));
 });
 
-$app->get('/services', function() use($app) {
+$app->get('/experience', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('services.twig', array('activeTab'=> 2));
+  return $app['twig']->render('experience.twig', array('activeTab'=> 2));
 });
 
 $app->get('/about', function() use($app) {
@@ -46,10 +46,5 @@ $app->get('/contact', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('contact.twig', array('activeTab'=> 4));
 });
-
-$app->get('/pricing', function() use($app) {
-  $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('pricing-tables.twig', array('activeTab'=> 5));
-});
-
+ 
 $app->run();
