@@ -2,7 +2,7 @@ $(document).ready(function() {
 			if(!Modernizr.meter){
 				alert('Sorry your brower does not support HTML5 progress bar');
 			} else {
-			   var progressbar = $('#progressbar'),
+			  /* var progressbar = $('#progressbar'),
 					max = progressbar.val(),
 					time = (1000/max)*2,	
 			    		value = 0;
@@ -25,5 +25,7 @@ $(document).ready(function() {
 			};
 
 
+*/
+		}
 
-		});
+		);

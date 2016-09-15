@@ -45,6 +45,12 @@ $app->get('/about', function() use($app) {
 $app->get('/contact', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('contact.twig', array('activeTab'=> 4));
+}); 
+
+$app->get('/detail/{id}', function($id) use($app)   {  
+   $app['monolog']->addDebug('logging output.'); 
+   return $app['twig']->render('detail.twig', array('activeTab'=> 666, 'id'=>$id, 'route'=>1));
 });
- 
+
+
 $app->run();
