@@ -62,12 +62,13 @@ jQuery(document).ready(function() {
 	/*
 	    Google maps
 	*/
+	/*
 	var position = new google.maps.LatLng(45.067883, 7.687231);
     $('.map').gmap({'center': position,'zoom': 15, 'disableDefaultUI':true, 'callback': function() {
             var self = this;
             self.addMarker({'position': this.get('map').getCenter() });	
         }
-    });
+    });*/
     
     /*
 	    Subscription form
@@ -138,7 +139,7 @@ jQuery(document).ready(function() {
                 }
                 if(json.nameMessage == '' && json.emailMessage == '' && json.messageMessage == '') {
                 	form.fadeOut('fast', function() {
-                		form.parent('.contact-form').append('<p><span class="violet">Thanks for contacting us!</span> We will get back to you very soon.</p>');
+                		form.parent('.contact-form').append('<p><span class="violet">¡Gracias por contactar!</span> :)</p>');
                     });
                 }
             }
@@ -214,6 +215,6 @@ jQuery(window).load(function() {
 	/*
 		Hidden images
 	*/
-	$(".testimonial-image img, .portfolio-box img").attr("style", "width: auto !important; height: auto !important;");
+	/*$(".testimonial-image img, .portfolio-box img").attr("style", "width: auto !important; height: auto !important;");*/
 	
 });

@@ -21,18 +21,18 @@ if($_POST) {
     $array['messageMessage'] = '';
 
     if($clientName == '') {
-        $array['nameMessage'] = 'Please enter your name.';
+        $array['nameMessage'] = 'Por favor introduzca su nombre.';
     }
     if(!isEmail($clientEmail)) {
-        $array['emailMessage'] = 'Please insert a valid email address.';
+        $array['emailMessage'] = 'Por favor introduzca un email válido.';
     }
     if($message == '') {
-        $array['messageMessage'] = 'Please enter your message.';
+        $array['messageMessage'] = 'Por favor escriba su mensaje.';
     }
     if($clientName != '' && isEmail($clientEmail) && $message != '') {
         // Send email
 	$headers = "From: " . $clientName . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
-	mail($emailTo, $subject . ' (andia)', $message, $headers);
+	mail($emailTo, $subject . ' (jorgelillo-cv)', $message, $headers);
     }
 
     echo json_encode($array);
