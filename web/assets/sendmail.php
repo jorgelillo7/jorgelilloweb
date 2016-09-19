@@ -6,7 +6,9 @@ function isEmail($email) {
 }
 
 if($_POST) {
-
+    ini_set("SMTP", "aspmx.l.google.com");
+    ini_set("sendmail_from", "jorge.lillo9@gmail.com");
+    
     // Enter the email where you want to receive the message
     $emailTo = 'jorge.lillo9@gmail.com';
 
